@@ -1,0 +1,77 @@
+.popup{
+    background: rgba(0, 0, 0, .6);
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 3000px black;
+    animation: add_dark_popup .4s ease-in-out forwards;
+}
+@keyframes add_dark_popup {
+    from{background: transparent;}
+    to{background-color: rgba(0, 0, 0, .6);}
+}
+@keyframes remove_dark_popup {
+    from{background-color: rgba(0, 0, 0, .6);}
+    to{background: transparent; box-shadow: none;}
+}
+.popup_content{
+    display: grid;
+    grid-template-rows: .3fr 3fr;
+    /* position: fixed; */
+    width: 50vw;
+    height: 70vh;
+    background-color: white;
+    z-index: 9999;
+    padding: 1%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .6);
+    animation: showpopup .5s ease-in-out forwards;
+}
+.popup_remove{
+    animation: removepopup .5s ease-in-out forwards !important;
+}
+@keyframes showpopup {
+    0%{transform: scale(0); opacity: 0;}
+    100%{transform: scale(1); opacity: 1;}
+}
+@keyframes removepopup {
+    0%{transform: scale(1);background-color: rgba(0, 0, 0, .6);opacity: 1;}
+    100%{transform: scale(0);background: transparent; box-shadow: none;opacity: 0;}
+}
+.popup_content > .popup_header{
+    display: grid;
+    grid-template-columns: 3fr .1fr;
+}
+.popup_content > .popup_header > .popup_title,.popup > .popup_header > .popup_closebtn{
+    display: flex;
+    /* justify-content: center; */
+    padding: 1%;
+    font-size: 2em;
+    font-weight: 900;
+    align-items: center;
+}
+.popup > .popup_header > .popup_closebtn{
+    text-align: right;
+}
+.popup_content > .popup_header > .popup_closebtn{
+    justify-content: right;
+    font-size: 1.5em;
+    transform: scale(.9);
+}
+.popup_content > .popup_header > .popup_closebtn > i:hover{
+    transform: rotate(360deg);
+    color: var(--lightprimary);
+    transition: .5s;
+}
+.popup_content > .popup_header > .popup_closebtn > i:not(:hover){transition: .5s;}
+.popup_content > .popup_iframe{
+    padding: 1%;
+}
+.popup_content > .popup_iframe > iframe{
+    width: 100%;
+    height: 100%;
+    border: none;
+}

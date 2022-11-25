@@ -1,0 +1,144 @@
+#wrapper{
+    background: white;
+    width: 90%;
+    margin-top: 5vh;
+    left: 5%;
+    min-height: 50vh;
+    position: relative;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr;
+    box-shadow: 0 0 20px rgba(0, 0, 0,.3);
+    margin-bottom: 5vh;
+}
+.mainnews{padding: 2vh;}
+.mainnews > h1{
+    margin: 0;
+    padding: 0;
+}
+.mainnews > .blockWithNews{
+    padding: 10px;
+    padding-left: 0;
+    display: grid;
+    position: relative;
+    grid-template-columns: 1.5fr 3fr;
+    min-height: 10vh;
+    max-height: 50vh;
+    /* border-bottom: 1px solid var(--lightprimary); */
+}
+.blockWithNews::after{
+    content: '';
+    background: linear-gradient(transparent,var(--lightprimary),transparent);
+    width: 300%;
+    margin-top: 5px;
+    height: 5px;
+    opacity: .3;
+}
+.mainnews > .blockWithNews > .img{
+    position: relative;
+}
+.mainnews > .blockWithNews > .img > img{
+    width: 100%;
+    transition: .4s;
+    /* max-height: 50%; */
+    object-fit: cover;
+}
+.mainnews > .blockWithNews > .img > img:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 20px var(--darkprimary),0 0 10px var(--darkprimary);
+    border-radius: 50px;
+    transition: .4s;
+}
+.mainnews > .blockWithNews > .text{
+    margin-left: 5%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: .1fr 1fr .1fr;
+}
+.mainnews > .blockWithNews > .text > .title{
+    font-size: 1.4em;
+}
+.mainnews > .blockWithNews > .text > .title > a.visited,.mainnews > .blockWithNews > .text > .title > a{
+    text-decoration: none;
+    color: black;
+}
+.mainnews > .blockWithNews > .text > .url > a.visited,.mainnews > .blockWithNews > .text > .url > a{
+    color: var(--darkprimary);
+}
+.exturls{
+    box-shadow: -5px 0 5px rgba(0, 0, 0,.1), -1px 5px 5px var(--lightprimary);
+    border-bottom-left-radius: 50px;
+    text-align: right;
+    padding: 2vh;
+    font-size: 1.2em;
+    background: white;
+}
+.exturls:hover{
+    transition: .4s;
+    box-shadow: -5px 0 5px rgba(0, 0, 0,.1), 0px 7px 20px var(--lightprimary);
+}
+.exturls:not(:hover){
+    transition: .4s;
+}
+.exturls > ul{
+    list-style-type: none;
+}
+.exturls > ul > li > span{
+    user-select: none;
+    cursor: pointer;
+    color: var(--primarytextcolor);
+}
+.exturls > ul > li:hover > span{
+    color: var(--lightprimary);
+    transition: .4s;
+}
+.exturls > ul > li:hover:after{
+    color: black;
+    transition: .4s;
+}
+.exturls > ul > li:not(:hover):after{transition: .4s;}
+
+.exturls > ul > li:not(:hover) > span{transition: .4s;}
+.exturls > ul > li:after{
+    content: ' •';
+    color: var(--primarytextcolor);
+}
+.article{
+    padding: 2%;
+}
+.article > span, .article > p{
+    font-size: 1.1em;
+}
+.article > figure{
+    text-align: center;
+}
+.article > figure > figcaption{
+    color: var(--primarytextcolor);
+}
+.article > figure:hover > figcaption{
+    color: black;
+    transition: .4s;
+}
+.article > figure:not(:hover) > figcaption{
+    transition: .4s;
+}
+#footer{
+    padding: 2%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#footer_urls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#footer_urls > a{color: var(--primarytextcolor) !important;}
+#footer_urls > a > i:not(:hover){transition: .4s;}
+#footer_urls > a > i:hover{
+    color: var(--lightprimary);
+    transition: .4s;
+    transform: scale(1.2) translateY(-26%);
+}
+#footer_urls > a > i.fa-telegram:hover{
+    color:#29a9eb;
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Main screen</title>
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/wrapper.css">
+        <link rel="stylesheet" href="css/popup.css">
+        <link rel="stylesheet" href="css/login.css">
+        <script src='js/main.js'></script>
+        <script src='js/popup_window.js'></script>
+        <script src='js/login.js'></script>
+    </head>
+    <body>
+        <!-- <div class="popup">
+            <div class="popup_header">
+                <div class="popup_title">TITLE</div>
+                <div class="popup_closebtn"><i class="fa fa-times-circle-o fa-2x" aria-hidden="true"></i></div>
+            </div>
+            <div class="popup_iframe">
+                <iframe src="index.html"></iframe>
+            </div>
+        </div> -->
+        <div id="header">
+            <div id="logo"></div>
+            <div id="urls">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <!-- <li><a href="#">Screen 2</a></li>
+                    <li><a href="#">Screen 3</a></li>
+                    <li><a href="#">Screen 4</a></li>
+                    <li><a href="#">Screen 5</a></li> -->
+                </ul>
+            </div>
+            <div id="loginToAcc"><i class="fa fa-sign-in fa-2x" aria-hidden="true" onclick="showloginpopup()"></i></div>
+        </div>
+        <div id="wrapper">
+            <div class="article">
+                <h1 style="margin: 0;">Что делает КИПовец?</h1>
+                <br>
+                <span>За обслуживание, эксплуатацию и ремонт различных контрольно-измерительных приборов и автоматики отвечают инженеры или слесари, которые имеют высшее или среднее специальное образование, специфический набор знаний и умений. Такие профессионалы занимаются обеспечением непрерывной работы всех технических средств предприятия, поиском неисправностей и их устранением. В этой статье мы расскажем, кто такой <b>КИПовец</b>, и что это за профессия в целом.</span>
+                <br><br>
+                <span><b>КИПиА</b> – это контрольно-измерительные приборы и автоматизация. В свою очередь, инженером <b>КИПиА</b> является специалист отдела, который занимается контролем работоспособности всех приборов и датчиков (ими могут выступать манометры, счетчики воды, терморегуляторы, преобразователи частот и другие автоматические системы).</span>
+                <br><br>
+                <span>Специалисты такого рода несут ответственность за техническое обслуживание подобных приборов, их ремонт и восстановление, а также за внедрение технологических новинок, настройку компьютеров.</span>
+                <br><br>
+                <span>Автоматические системы требуется везде, где используются приборы, поэтому профессия КИПовца крайне универсальна.</span>
+                <br><br>
+                <span>Не имеет значения, будет ли он работать на производстве, в котельной или в строительстве – его функции будут практически неизменными.</span>
+                <h2>Работа и зарплата</h2>
+                <span>КИПиА существуют на всех производствах, в крупных компаниях, поэтому инженер или слесарь достаточно быстро может устроиться на работу. На размер оклада значительное влияние оказывает регион, в котором трудится специалист, место его работы, квалификационная категория. В среднем на сегодняшний день слесари КИПиА получают от 20 до 50 000 рублей, инженеры от 32 до 80 000 рублей.</span>
+                <br><br>
+                <span></span>
+                <br><br>
+                <span></span>
+                <br><br>
+                <span></span>
+            </div>
+            <div class="exturls">
+                <div class="title">Дополнительные вопросы:</div>
+                <ul>
+                    <li onclick="show_popup('Плюсы и минусы профессии','plusesandminuses.html')"><span>Плюсы и минусы профессии</span></li>
+                    <li onclick="show_popup('Как стать КИПовцем?','kakstat.html')"><span>Как стать КИПовцем?</span></li>
+                    <li onclick="show_popup('Какие навыки нужны?','kakienaviki.html')"><span>Какие навыки нужны?</span></li>
+                    <li onclick="show_popup('Какое образование необходимо?','obrazovanie.html')"><span>Какое образование необходимо?</span></li>
+                    <li onclick="show_popup('Какие экзамены нужно сдавать?','exams.html')"><span>Какие экзамены нужно сдавать?</span></li>
+                    <li onclick="show_popup('Сколько учиться после 9 и 11 класса?','skolkouchitsa.html')"><span>Сколько учиться после 9 и 11 класса?</span></li>
+                    <li onclick="show_popup('Возможно ли дистанционное обучение?','distant.html')"><span>Возможно ли дистанционное обучение?</span></li>
+                </ul>
+            </div>
+            <div id="footer">
+                <div class="aboutme">
+                    <span>
+                        Выполнил верстку: Скибинский Степан<br>Студент ГАПОУ СО "БПТ"<br>Специальность 15.02.07<br>3 курс 5 группа
+                    </span>
+                </div>
+            </div>
+            <div id="footer_urls">
+                <a href="#"><i class="fa fa-vk fa-2x" style="padding-right: 1vw;" aria-hidden="true"></i></a>
+                <a href="https://t.me/skiste"><i class="fa fa-telegram fa-2x" aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </body>
+</html>

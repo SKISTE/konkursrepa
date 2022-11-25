@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Main screen</title>
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/wrapper.css">
+        <link rel="stylesheet" href="css/login.css">
+        <link rel="stylesheet" href="css/popup.css">
+        <script src='js/main.js'></script>
+        <script src='js/popup_window.js'></script>
+        <script src='js/login.js'></script>
+    </head>
+    <body>
+        <iframe id="dummyframe" style="display:none ;"></iframe>
+        <!-- <div class="popup">
+            <div class="popup_content">
+                <div class="popup_header">
+                    <div class="popup_title">TITLE</div>
+                    <div class="popup_closebtn"><i class="fa fa-times-circle-o fa-2x" aria-hidden="true" onclick="remove_popups()"></i></div>
+                </div>
+                <div class="popup_iframe">
+                    <iframe src="extendedhtmls/distant.html"></iframe>
+                </div>
+            </div>
+        </div> -->
+        <!-- <div id="loginform">
+            <div class="loginform">
+                <form target="dummyframe" method="post">
+                    <div class="login_header">
+                        <label>Войти</label>
+                        <span><i class="fa fa-times-circle-o" aria-hidden="true"></i></span> 
+                    </div>
+                    <input type="email" placeholder="Логин">
+                    <input type="password" placeholder="Пароль">
+                    <input type="submit" onclick="alert('Ну, это в будущем можно будет развивать для возможности создания постов, для удаления или для просмотра эксклюзивных постов, но для этого нужно реализовывать бэк, а это вроде ну нельзя')" value="Войти">
+                </form>
+            </div>
+        </div> -->
+        <div id="header">
+            <div id="logo"></div>
+            <div id="urls">
+                <ul>
+                    <li class="current"><a href="index.html">Главная</a></li>
+                    <!-- <li><a href="#">Screen 2</a></li>
+                    <li><a href="#">Screen 3</a></li>
+                    <li><a href="#">Screen 4</a></li>
+                    <li><a href="#">Screen 5</a></li> -->
+                </ul>
+            </div>
+            <div id="loginToAcc"><i class="fa fa-sign-in fa-2x" aria-hidden="true" onclick="showloginpopup()"></i></div>
+        </div>
+        <div id="wrapper">
+            <div class="mainnews">
+                <h1>Коротко о профессии:</h1>
+                <div class="blockWithNews">
+                    <div class="img">
+                        <img src="https://mfc74.ru/wp-content/uploads/2021/07/68af2208b4b60dcf64fcc9f208141c8e.png">
+                    </div>
+                    <div class="text">
+                        <div class="title"><a href='about_kip.html'>Что делает КИПовец?</a></div>
+                        <div class="description">КИПовец – что это за профессия, зарплата и особенности обучения на инженера и слесаря КИПиА</div>
+                        <div class="url"><a href='about_kip.html'>Читать полностью...</a></div>
+                    </div>
+                </div>
+                <div class="blockWithNews">
+                    <div class="img">
+                        <img src="https://proagregat.com/wp-content/auploads/784011/kontrolno-izmeritelnyy_pribor.jpg">
+                    </div>
+                    <div class="text">
+                        <div class="title"><a href='zadachi.html'>Задачи и обязанности КИПовца</a></div>
+                        <div class="description">Сложная техническая профессия требует серьезной подготовки, поэтому чаще всего будущие инженеры КИПиА сначала работают слесарями, получая необходимый опыт.</div>
+                        <div class="url"><a href='zadachi.html'>Читать полностью...</a></div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="exturls">
+                <div class="title">Дополнительные вопросы:</div>
+                <ul>
+                    <li onclick="show_popup('Плюсы и минусы профессии','plusesandminuses.html')"><span>Плюсы и минусы профессии</span></li>
+                    <li onclick="show_popup('Как стать КИПовцем?','kakstat.html')"><span>Как стать КИПовцем?</span></li>
+                    <li onclick="show_popup('Какие навыки нужны?','kakienaviki.html')"><span>Какие навыки нужны?</span></li>
+                    <li onclick="show_popup('Какое образование необходимо?','obrazovanie.html')"><span>Какое образование необходимо?</span></li>
+                    <li onclick="show_popup('Какие экзамены нужно сдавать?','exams.html')"><span>Какие экзамены нужно сдавать?</span></li>
+                    <li onclick="show_popup('Сколько учиться после 9 и 11 класса?','skolkouchitsa.html')"><span>Сколько учиться после 9 и 11 класса?</span></li>
+                    <li onclick="show_popup('Возможно ли дистанционное обучение?','distant.html')"><span>Возможно ли дистанционное обучение?</span></li>
+                </ul>
+            </div>
+            <div id="footer">
+                <div class="aboutme">
+                    <span>
+                        Выполнил верстку: Скибинский Степан<br>Студент ГАПОУ СО "БПТ"<br>Специальность 15.02.07<br>3 курс 5 группа
+                    </span>
+                </div>
+            </div>
+            <div id="footer_urls">
+                <!-- Здесь когда нибудь будет ссылка на мой вк -->
+                <a href="#"><i class="fa fa-vk fa-2x" style="padding-right: 1vw;" aria-hidden="true"></i></a>
+                <a href="https://t.me/skiste"><i class="fa fa-telegram fa-2x" aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </body>
+</html>

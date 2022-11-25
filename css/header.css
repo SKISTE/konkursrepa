@@ -1,0 +1,58 @@
+#header{
+    background-color: #ffffff;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr;
+    min-height: 5vh;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .3);
+}
+#header > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primarytextcolor);
+}
+#header > #urls > ul{
+    position: relative;
+}
+#header > #loginToAcc > i:not(:hover){
+    transition: .4s;
+}
+#header > #loginToAcc > i:hover{
+    color: black;
+    cursor: pointer;
+    transition: .4s;
+    transform: scale(1.1);
+}
+#header > #logo{
+    background: url(../media/logo.svg);
+    background-size: 100% 100%;
+    width: 100%;
+}
+#header > #urls > ul > li.current > a{
+    color: var(--lightprimary) !important;
+    /* text-shadow: 0 0px 2px var(--lightprimary); */
+}
+#header > #urls > ul > li{
+    display: inline;
+    font-size: 1em;
+    font-weight: 900;
+    width: 100%;
+    height: 100%;
+    transition: .4s;
+}
+#header > #urls > ul > li:hover > a{
+    color: var(--lightprimary);
+    transition: .4s;
+}
+#header > #urls > ul > li:not(:hover) > a{
+    color: var(--primarytextcolor);
+    transition: .4s;
+}
+#header > #urls > ul > li:not(:last-child){
+    margin-right: 50px;
+}
+#header > #urls > ul > li > a.visited, #header > #urls > ul > li > a{
+    color: var(--primarytextcolor);
+    text-decoration: none;
+}
